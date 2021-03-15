@@ -443,6 +443,6 @@ export class ActionMenuNode implements MenuNode {
     }
 
     get sortString(): string {
-        return this.action.order || this.label;
+        return this.action.order || this.label.toLocaleLowerCase();
     }
 }
